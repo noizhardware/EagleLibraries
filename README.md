@@ -3,7 +3,7 @@
 
 **bao.lbr** is the main library
 
-**baoPanel.lbr** is mostly intended for creating panel cutout layouts to be exported to .dxf for cnc punching/laser. Probably not a good idea, but worked for me so far.
+**baoPanel.lbr** is mostly intended for creating panel cutout layouts to be exported to .dxf for cnc punching/lasercut. Probably not a good idea, but worked for me so far.
 
 **baoUtil** contains utilities for component placement like rulers, grids...
 
