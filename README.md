@@ -2,8 +2,11 @@
 ## Cadsoft Eagle Libraries - mostly for audio applications
 
 **bao.lbr** is the main library
+
 **baoPanel.lbr** is mostly intended for creating panel cutout layouts to be exported to .dxf for cnc punching/laser. Probably not a good idea, but worked for me so far.
+
 **baoUtil** contains utilities for component placement like rulers, grids...
+
 ### the "Legacy" folder contains previous versions of parts, for backward compatibility
 
 _Up to bao09.lbr the libraries were made with Eagle 7.6.0
