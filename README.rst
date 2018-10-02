@@ -1,5 +1,4 @@
  E A G L E   libraries
-=============
 ## Cadsoft Eagle Libraries - mostly for audio applications
 
 .. image:: https://i.imgur.com/6Usj29mh.jpg
