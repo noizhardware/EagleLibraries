@@ -1,6 +1,5 @@
-![icon](eaglelogo.jpg)
-
 # E A G L E   libraries
+![icon](eaglelogo.jpg)
 ## Cadsoft Eagle Libraries - mostly for audio applications
 
 **bao.lbr** is the main library
