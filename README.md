@@ -2,6 +2,8 @@
 ## Cadsoft Eagle Libraries - mostly for audio applications
 
 **bao.lbr** is the main library
+ * now all the devices have the attribute "POPULATE" as a boolean value, so for example for a resistor it's "TRUE", for a test pad it's "FALSE"
+ * also, every component is unique now, so for example, there is a package variant for each resistor value, so that is easier to track them with inventory software. Each one has a unique "NHPREF" attribute, you can change the name and value of this one as you wish for use in your inventory system. All Legacy up to _bao12.lbr_ DOESN'T use this system.
 
 **baoPanel.lbr** is mostly intended for creating panel cutout layouts to be exported to .dxf for cnc punching/lasercut. Probably not a good idea, but worked for me so far.
 
