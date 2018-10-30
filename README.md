@@ -9,7 +9,7 @@
 
 **baoUtil** contains utilities for component placement like rulers, grids...
 
-### the "Legacy" folder contains previous versions of parts, for backward compatibility
+### the "Legacy" folder contains previous versions of the libraries, for backward compatibility
 
 ---
 
