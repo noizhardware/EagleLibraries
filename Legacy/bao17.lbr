@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="20" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2796,7 +2796,6 @@ MELF 0.25 W</description>
 <pad name="+" x="-1.0922" y="0.0762" drill="0.8"/>
 <text x="-2.7178" y="-5.08" size="1.016" layer="27" font="vector">&gt;VALUE</text>
 <wire x1="1.27" y1="2.794" x2="1.27" y2="-2.794" width="0.508" layer="21" curve="-131.11209"/>
-<circle x="0" y="0" radius="3.212871875" width="0.1524" layer="39"/>
 </package>
 <package name="BC847C_SOT23">
 <wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
@@ -2821,6 +2820,10 @@ MELF 0.25 W</description>
 <text x="-2.194559375" y="0.93218125" size="0.6096" layer="21" font="vector" rot="R270">1G</text>
 </package>
 <package name="79L05_SOT89-B">
+<wire x1="2.2724" y1="1.6104" x2="2.2724" y2="-1.1104" width="0.1524" layer="51"/>
+<wire x1="2.2724" y1="-1.1104" x2="-2.2724" y2="-1.1104" width="0.1524" layer="51"/>
+<wire x1="-2.2724" y1="-1.1104" x2="-2.2724" y2="1.6104" width="0.1524" layer="51"/>
+<wire x1="-2.2724" y1="1.6104" x2="2.2724" y2="1.6104" width="0.1524" layer="51"/>
 <wire x1="-2.2724" y1="-1.1024" x2="-2.2724" y2="1.6104" width="0.1524" layer="21"/>
 <wire x1="-2.2724" y1="1.6104" x2="-1.2136" y2="1.6104" width="0.1524" layer="21"/>
 <wire x1="2.2724" y1="1.6104" x2="2.2724" y2="-1.1024" width="0.1524" layer="21"/>
@@ -2832,6 +2835,10 @@ MELF 0.25 W</description>
 <smd name="INPUT" x="0" y="-1.73" dx="0.7" dy="2.55" layer="1" stop="no" cream="no"/>
 <text x="4.61858125" y="-2.545359375" size="1.27" layer="25" font="vector" rot="R90">&gt;NAME</text>
 <text x="-3.139915625" y="-2.6241" size="1.27" layer="27" font="vector" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.75" y1="-2.15" x2="-1.25" y2="-1.15" layer="51"/>
+<rectangle x1="-0.25" y1="-2.15" x2="0.25" y2="-1.15" layer="51"/>
+<rectangle x1="1.25" y1="-2.15" x2="1.75" y2="-1.15" layer="51"/>
+<rectangle x1="-0.85" y1="1.65" x2="0.85" y2="2.2" layer="51"/>
 <rectangle x1="-0.45" y1="-3.1" x2="0.45" y2="-1.1" layer="29"/>
 <rectangle x1="-0.35" y1="-3" x2="0.35" y2="-1.2" layer="31"/>
 <rectangle x1="-1.3" y1="-0.6" x2="1.3" y2="3.6" layer="29"/>
@@ -3540,31 +3547,16 @@ MELF 0.25 W</description>
 <vertex x="6" y="-5.064"/>
 <vertex x="-6" y="-5.064"/>
 </polygon>
-<wire x1="-5.969" y1="3.937" x2="-5.969" y2="8.001" width="0.254" layer="51"/>
-<wire x1="-5.969" y1="8.001" x2="-4.064" y2="8.001" width="0.254" layer="51"/>
-<wire x1="-4.064" y1="8.001" x2="-4.064" y2="10.922" width="0.254" layer="51"/>
-<wire x1="-4.064" y1="10.922" x2="4.064" y2="10.922" width="0.254" layer="51"/>
-<wire x1="4.064" y1="10.922" x2="4.064" y2="8.001" width="0.254" layer="51"/>
-<wire x1="4.064" y1="8.001" x2="5.969" y2="8.001" width="0.254" layer="51"/>
-<wire x1="5.969" y1="8.001" x2="5.969" y2="3.937" width="0.254" layer="51"/>
-<wire x1="5.969" y1="3.937" x2="-5.969" y2="3.937" width="0.254" layer="51"/>
 <polygon width="0.254" layer="41">
-<vertex x="-4.064" y="10.922"/>
-<vertex x="4.064" y="10.922"/>
-<vertex x="4.064" y="8.001"/>
-<vertex x="5.969" y="8.001"/>
-<vertex x="5.969" y="3.937"/>
-<vertex x="4.191" y="3.937"/>
-<vertex x="4.191" y="4.445" curve="90"/>
-<vertex x="2.032" y="6.604"/>
-<vertex x="-2.032" y="6.604" curve="90"/>
-<vertex x="-4.191" y="4.572"/>
-<vertex x="-4.191" y="3.937"/>
-<vertex x="-5.969" y="3.937"/>
-<vertex x="-5.969" y="8.001"/>
-<vertex x="-4.064" y="8.001"/>
+<vertex x="-4" y="10.936"/>
+<vertex x="4" y="10.936"/>
+<vertex x="4" y="7.936"/>
+<vertex x="6" y="7.936"/>
+<vertex x="6" y="3.936"/>
+<vertex x="-6" y="3.936"/>
+<vertex x="-6" y="7.936"/>
+<vertex x="-4" y="7.936"/>
 </polygon>
-<text x="8.636" y="1.27" size="1.778" layer="27" font="vector" rot="R90">&gt;VALUE</text>
 </package>
 <package name="SWITCH_SPDT__HORIZ_SIDEMOUNT_CHICAGO_UP-R">
 <text x="3.81" y="18.034" size="1.778" layer="25" font="vector" ratio="10" rot="R180">&gt;NAME</text>
