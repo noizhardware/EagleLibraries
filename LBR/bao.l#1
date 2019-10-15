@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -67,6 +67,8 @@
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
@@ -1985,6 +1987,12 @@ MELF 0.25 W</description>
 <text x="6.604" y="15.748" size="1.27" layer="51" font="vector" rot="R270">CON</text>
 <text x="-7.874" y="15.24" size="1.27" layer="51" font="vector" rot="R270">SW</text>
 <text x="-2.54" y="25.4" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<rectangle x1="-1" y1="0" x2="1" y2="15" layer="39"/>
+<rectangle x1="-9.064" y1="-0.23" x2="-6.564" y2="24.27" layer="39"/>
+<rectangle x1="6.73" y1="-0.23" x2="9.23" y2="24.27" layer="39"/>
+<rectangle x1="-8" y1="0" x2="8" y2="2" layer="39"/>
+<rectangle x1="-8" y1="22" x2="8" y2="24" layer="39"/>
+<rectangle x1="-7" y1="10" x2="7" y2="12" layer="39"/>
 </package>
 <package name="MINIJACK">
 <wire x1="-6" y1="-0.015" x2="-6" y2="13.985" width="0.127" layer="21"/>
@@ -2005,6 +2013,8 @@ MELF 0.25 W</description>
 <text x="-3.81" y="15.24" size="1.778" layer="25" font="vector">&gt;NAME</text>
 </package>
 <package name="POT_ALPS_RK097_ST_CENTERED">
+<description>&lt;p&gt;SCCW - SC - SCW -&gt; Shaft side&lt;/p&gt;
+&lt;p&gt;BCCW - BC - BCW -&gt; Base side&lt;/p&gt;</description>
 <wire x1="-4.75" y1="9.27" x2="-4.75" y2="9.02" width="0.127" layer="21"/>
 <wire x1="-4.75" y1="9.02" x2="-4.75" y2="5.33" width="0.127" layer="21"/>
 <wire x1="-4.75" y1="5.33" x2="-4.75" y2="2.52" width="0.127" layer="21"/>
@@ -2070,16 +2080,16 @@ MELF 0.25 W</description>
 <wire x1="4" y1="5.33" x2="4.75" y2="5.33" width="0" layer="21"/>
 <wire x1="-3.25" y1="6.08" x2="-4" y2="5.33" width="0" layer="21"/>
 <wire x1="-4" y1="5.33" x2="-4.75" y2="5.33" width="0" layer="21"/>
-<pad name="ACW" x="2.5" y="5.02" drill="1" diameter="1.4224" shape="square"/>
-<pad name="AC" x="0" y="5.02" drill="1" diameter="1.4224" shape="square"/>
-<pad name="ACCW" x="-2.5" y="5.02" drill="1" diameter="1.4224" shape="square"/>
+<pad name="SCW" x="2.5" y="5.02" drill="1" diameter="1.4224" shape="square"/>
+<pad name="SC" x="0" y="5.02" drill="1" diameter="1.4224" shape="square"/>
+<pad name="SCCW" x="-2.5" y="5.02" drill="1" diameter="1.4224" shape="square"/>
 <pad name="BCCW" x="-2.5" y="7.77" drill="1" diameter="1.4224" shape="square"/>
 <pad name="BC" x="0" y="7.77" drill="1" diameter="1.4224" shape="square"/>
 <pad name="BCW" x="2.5" y="7.77" drill="1" diameter="1.4224" shape="square"/>
 <text x="-1.29" y="0.27" size="1.4224" layer="21" font="fixed">RK097</text>
 <text x="-3.81" y="10.16" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <text x="-6.35" y="7.62" size="1.27" layer="27" font="vector" rot="R270">&gt;VALUE</text>
-<text x="-4.572" y="4.445" size="1.27" layer="51" font="vector">A</text>
+<text x="-4.572" y="4.445" size="1.27" layer="51" font="vector">S</text>
 <text x="-4.572" y="7.1882" size="1.27" layer="51" font="vector">B</text>
 </package>
 <package name="SWITCH-110-220-NEW">
@@ -3946,7 +3956,6 @@ MELF 0.25 W</description>
 </symbol>
 <symbol name="GND">
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
-<text x="-2.54" y="-2.54" size="1.778" layer="95" font="vector">&gt;NAME</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
 <symbol name="VEE">
@@ -4242,15 +4251,15 @@ MELF 0.25 W</description>
 <wire x1="0" y1="-1.27" x2="0" y2="-2.54" width="0.1524" layer="94"/>
 <text x="-5.08" y="-2.54" size="1.778" layer="95" font="vector" rot="MR90">&gt;NAME</text>
 <text x="-5.08" y="-2.54" size="1.778" layer="96" rot="MR90">&gt;VALUE</text>
-<pin name="LED+" x="0" y="5.08" visible="pad" length="short" rot="R270"/>
-<pin name="LED-" x="0" y="-5.08" visible="pad" length="short" rot="R90"/>
+<pin name="LED+" x="0" y="5.08" visible="off" length="short" rot="R270"/>
+<pin name="LED-" x="0" y="-5.08" visible="off" length="short" rot="R90"/>
 <wire x1="2.54" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94" style="shortdash"/>
 <wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94" style="shortdash"/>
 <wire x1="-2.54" y1="-2.54" x2="2.54" y2="-2.54" width="0.254" layer="94" style="shortdash"/>
 </symbol>
 <symbol name="VACTROL_LDR">
-<pin name="LDRB" x="0" y="-5.08" visible="pad" length="short" direction="pas" swaplevel="1" rot="R90"/>
-<pin name="LDRA" x="0" y="5.08" visible="pad" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="LDRB" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<pin name="LDRA" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <wire x1="-1.2954" y1="0.01778125" x2="-0.4064" y2="-0.87121875" width="0.254" layer="94"/>
 <wire x1="-1.2446" y1="-0.54101875" x2="-0.4064" y2="-0.87121875" width="0.254" layer="94"/>
 <wire x1="-0.4064" y1="-0.87121875" x2="-0.762" y2="-0.03301875" width="0.254" layer="94"/>
@@ -4762,6 +4771,22 @@ MELF 0.25 W</description>
 <text x="2.9718" y="-1.016" size="0.6096" layer="95" font="vector">DUAL</text>
 <text x="-2.8194" y="-0.254" size="0.6096" layer="95" font="vector" rot="R180">single</text>
 </symbol>
+<symbol name="555TIMER">
+<wire x1="-7.62" y1="-10.16" x2="7.62" y2="-10.16" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="7.62" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-10.16" width="0.4064" layer="94"/>
+<pin name="CV" x="-10.16" y="-2.54" length="short" direction="in"/>
+<pin name="DIS" x="10.16" y="2.54" length="short" direction="in" rot="R180"/>
+<pin name="GND" x="-10.16" y="-7.62" length="short" direction="pwr"/>
+<pin name="OUT" x="10.16" y="7.62" length="short" direction="out" rot="R180"/>
+<pin name="R" x="-10.16" y="2.54" length="short" direction="in" function="dot"/>
+<pin name="THR" x="10.16" y="-2.54" length="short" direction="in" rot="R180"/>
+<pin name="TR" x="-10.16" y="7.62" length="short" direction="in"/>
+<pin name="V+" x="10.16" y="-7.62" length="short" direction="pwr" rot="R180"/>
+<text x="-7.62" y="10.922" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-7.62" y="-12.827" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MC1458">
@@ -5028,6 +5053,34 @@ MELF 0.25 W</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+<device name="_NEWYORK_470R_1/2W" package="RES_1/4_UP1">
+<connects>
+<connect gate="&gt;VALUE" pin="1" pad="1"/>
+<connect gate="&gt;VALUE" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="INFO" value="" constant="no"/>
+<attribute name="NHPREF" value="213"/>
+<attribute name="POPULATE" value="TRUE" constant="no"/>
+<attribute name="VALUE" value="470R_1/2W"/>
+</technology>
+</technologies>
+</device>
+<device name="_CHICAGO_470R_1/2W" package="RES_1/4_LAYDWN">
+<connects>
+<connect gate="&gt;VALUE" pin="1" pad="1"/>
+<connect gate="&gt;VALUE" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="INFO" value="" constant="no"/>
+<attribute name="NHPREF" value="213"/>
+<attribute name="POPULATE" value="TRUE" constant="no"/>
+<attribute name="VALUE" value="470R_1/2W"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -5347,18 +5400,18 @@ MELF 0.25 W</description>
 </deviceset>
 <deviceset name="POT_STEREO" prefix="POT" uservalue="yes">
 <gates>
-<gate name="_A" symbol="POT" x="-7.62" y="0" swaplevel="1"/>
+<gate name="_S" symbol="POT" x="-7.62" y="0" swaplevel="1"/>
 <gate name="_B" symbol="POT" x="7.62" y="0" swaplevel="1"/>
 </gates>
 <devices>
 <device name="ST_H_B50K" package="POT_ALPS_RK097_ST_CENTERED">
 <connects>
-<connect gate="_A" pin="C" pad="AC"/>
-<connect gate="_A" pin="CCW" pad="ACCW"/>
-<connect gate="_A" pin="CW" pad="ACW"/>
 <connect gate="_B" pin="C" pad="BC"/>
 <connect gate="_B" pin="CCW" pad="BCCW"/>
 <connect gate="_B" pin="CW" pad="BCW"/>
+<connect gate="_S" pin="C" pad="SC"/>
+<connect gate="_S" pin="CCW" pad="SCCW"/>
+<connect gate="_S" pin="CW" pad="SCW"/>
 </connects>
 <technologies>
 <technology name="">
@@ -5371,12 +5424,12 @@ MELF 0.25 W</description>
 </device>
 <device name="ST_H_A50K" package="POT_ALPS_RK097_ST_CENTERED">
 <connects>
-<connect gate="_A" pin="C" pad="AC"/>
-<connect gate="_A" pin="CCW" pad="ACCW"/>
-<connect gate="_A" pin="CW" pad="ACW"/>
 <connect gate="_B" pin="C" pad="BC"/>
 <connect gate="_B" pin="CCW" pad="BCCW"/>
 <connect gate="_B" pin="CW" pad="BCW"/>
+<connect gate="_S" pin="C" pad="SC"/>
+<connect gate="_S" pin="CCW" pad="SCCW"/>
+<connect gate="_S" pin="CW" pad="SCW"/>
 </connects>
 <technologies>
 <technology name="">
@@ -6579,14 +6632,14 @@ MELF 0.25 W</description>
 </deviceset>
 <deviceset name="JUMPER_SOLDER_SINGLEDUAL">
 <gates>
-<gate name="G$1" symbol="JUMPER_3P_SINGLEDUAL" x="0" y="0"/>
+<gate name="JP" symbol="JUMPER_3P_SINGLEDUAL" x="0" y="0"/>
 </gates>
 <devices>
 <device name="00" package="JUMPER_SOLDER_3P_01">
 <connects>
-<connect gate="G$1" pin="COMMON" pad="COMMON"/>
-<connect gate="G$1" pin="DUAL" pad="DUAL"/>
-<connect gate="G$1" pin="SINGLE" pad="SINGLE"/>
+<connect gate="JP" pin="COMMON" pad="COMMON"/>
+<connect gate="JP" pin="DUAL" pad="DUAL"/>
+<connect gate="JP" pin="SINGLE" pad="SINGLE"/>
 </connects>
 <technologies>
 <technology name="">

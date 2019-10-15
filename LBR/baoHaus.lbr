@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
@@ -165,6 +165,12 @@
 <rectangle x1="0" y1="0" x2="110" y2="42" layer="102"/>
 <text x="35" y="28" size="8" layer="103" font="vector">Pedram</text>
 <text x="25" y="10" size="8" layer="103" font="vector">110 x 42</text>
+</package>
+<package name="LETTO-NEIDEN_205X94">
+<rectangle x1="0" y1="0" x2="205" y2="94" layer="102"/>
+<text x="77" y="59" size="10" layer="103" font="vector">LETTO</text>
+<text x="84" y="41" size="5" layer="103" font="vector">205 x 94</text>
+<text x="83.35" y="50.11" size="6.4516" layer="103" font="vector">neiden</text>
 </package>
 </packages>
 <symbols>
