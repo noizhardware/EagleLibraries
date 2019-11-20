@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3785,6 +3785,16 @@ Source: www.neutrik.com/... 210_229291.pdf</description>
 <text x="-11.43" y="-3.81" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <hole x="-3.81" y="13.97" drill="1.6"/>
 <hole x="3.81" y="8.89" drill="1.6"/>
+<polygon width="0.2032" layer="39">
+<vertex x="-12.5" y="17.75"/>
+<vertex x="-10.75" y="17.75"/>
+<vertex x="-10.75" y="20.25"/>
+<vertex x="10.75" y="20.25"/>
+<vertex x="10.75" y="17.75"/>
+<vertex x="12.5" y="17.75"/>
+<vertex x="12.5" y="-1.5"/>
+<vertex x="-12.5" y="-1.5"/>
+</polygon>
 </package>
 <package name="M3_HOLE">
 <smd name="P$1" x="0" y="0" dx="6" dy="6" layer="1" roundness="100"/>
@@ -3991,7 +4001,6 @@ Source: www.neutrik.com/... 210_287451.pdf</description>
 <package name="M3_HOLE_NORESTRICT">
 <smd name="P$1" x="0" y="0" dx="6" dy="6" layer="1" roundness="100"/>
 <smd name="P$2" x="0" y="0" dx="6" dy="6" layer="16" roundness="100"/>
-<hole x="0" y="0" drill="3.5"/>
 <pad name="P$3" x="-2.5" y="0" drill="0.3"/>
 <pad name="P$4" x="2.375" y="0" drill="0.3"/>
 <pad name="P$5" x="0" y="2.375" drill="0.3"/>
@@ -4003,6 +4012,10 @@ Source: www.neutrik.com/... 210_287451.pdf</description>
 <circle x="0" y="0" radius="3.482096875" width="0" layer="39"/>
 <circle x="0" y="0" radius="3.457328125" width="0" layer="40"/>
 <circle x="0" y="0" radius="3.7604" width="0.2" layer="21"/>
+<wire x1="0" y1="1.75" x2="1.75" y2="0" width="0" layer="20" curve="-90"/>
+<wire x1="1.75" y1="0" x2="0" y2="-1.75" width="0" layer="20" curve="-90"/>
+<wire x1="0" y1="-1.75" x2="-1.75" y2="0" width="0" layer="20" curve="-90"/>
+<wire x1="-1.75" y1="0" x2="0" y2="1.75" width="0" layer="20" curve="-90"/>
 </package>
 </packages>
 <symbols>

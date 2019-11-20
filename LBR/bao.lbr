@@ -3799,7 +3799,6 @@ Source: www.neutrik.com/... 210_229291.pdf</description>
 <package name="M3_HOLE">
 <smd name="P$1" x="0" y="0" dx="6" dy="6" layer="1" roundness="100"/>
 <smd name="P$2" x="0" y="0" dx="6" dy="6" layer="16" roundness="100"/>
-<hole x="0" y="0" drill="3.5"/>
 <pad name="P$3" x="-2.5" y="0" drill="0.3"/>
 <pad name="P$4" x="2.375" y="0" drill="0.3"/>
 <pad name="P$5" x="0" y="2.375" drill="0.3"/>
@@ -3814,6 +3813,10 @@ Source: www.neutrik.com/... 210_229291.pdf</description>
 <circle x="0" y="0" radius="3.52003125" width="0" layer="42"/>
 <circle x="0" y="0" radius="3.528896875" width="0" layer="43"/>
 <circle x="0" y="0" radius="3.7604" width="0.2" layer="21"/>
+<wire x1="0" y1="1.75" x2="1.75" y2="0" width="0" layer="20" curve="-90"/>
+<wire x1="1.75" y1="0" x2="0" y2="-1.75" width="0" layer="20" curve="-90"/>
+<wire x1="0" y1="-1.75" x2="-1.75" y2="0" width="0" layer="20" curve="-90"/>
+<wire x1="-1.75" y1="0" x2="0" y2="1.75" width="0" layer="20" curve="-90"/>
 </package>
 <package name="M3_SPACER_SMD">
 <pad name="P$1" x="0" y="0" drill="1" diameter="7"/>
@@ -4001,7 +4004,6 @@ Source: www.neutrik.com/... 210_287451.pdf</description>
 <package name="M3_HOLE_NORESTRICT">
 <smd name="P$1" x="0" y="0" dx="6" dy="6" layer="1" roundness="100"/>
 <smd name="P$2" x="0" y="0" dx="6" dy="6" layer="16" roundness="100"/>
-<hole x="0" y="0" drill="3.5"/>
 <pad name="P$3" x="-2.5" y="0" drill="0.3"/>
 <pad name="P$4" x="2.375" y="0" drill="0.3"/>
 <pad name="P$5" x="0" y="2.375" drill="0.3"/>
@@ -4013,6 +4015,10 @@ Source: www.neutrik.com/... 210_287451.pdf</description>
 <circle x="0" y="0" radius="3.482096875" width="0" layer="39"/>
 <circle x="0" y="0" radius="3.457328125" width="0" layer="40"/>
 <circle x="0" y="0" radius="3.7604" width="0.2" layer="21"/>
+<wire x1="0" y1="1.75" x2="1.75" y2="0" width="0" layer="20" curve="-90"/>
+<wire x1="1.75" y1="0" x2="0" y2="-1.75" width="0" layer="20" curve="-90"/>
+<wire x1="0" y1="-1.75" x2="-1.75" y2="0" width="0" layer="20" curve="-90"/>
+<wire x1="-1.75" y1="0" x2="0" y2="1.75" width="0" layer="20" curve="-90"/>
 </package>
 </packages>
 <symbols>
