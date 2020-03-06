@@ -22,7 +22,7 @@ I created most of the footprints, some of them are edited versions of footprints
 
 ### TODO: 
  * Transfer all footprints intended for home-etching-only to a separate library, like baoHomeEtch.lbr.
-   I stopped home-etching about an year ago, but someone could find them useful.
+   I stopped home-etching, but someone could find them useful.
    
 * split library into categories? like baoCONN for connectors, baoUI for user interface components, etc..
 
