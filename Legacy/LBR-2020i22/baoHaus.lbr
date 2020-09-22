@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="9.0.1">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<layers>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="101" name="titles" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="102" name="furniture" color="53" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="text" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="people" color="41" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<description>🏠🏠🏠🏠🏠🏠🏠🏠🏠🏠🏠🏠</description>
+<packages>
+<package name="KALLAX">
+<rectangle x1="0" y1="0" x2="147" y2="39" layer="102"/>
+<text x="51" y="15" size="10" layer="103" font="vector">KALLAX</text>
+</package>
+<package name="TAVOLO_60X120">
+<rectangle x1="0" y1="0" x2="120" y2="60" layer="102"/>
+<text x="27" y="27" size="10" layer="103" font="vector">60 x 120</text>
+</package>
+<package name="TAVOLO_150X60">
+<rectangle x1="0" y1="0" x2="150" y2="60" layer="102"/>
+<text x="39" y="28" size="10" layer="103" font="vector">150 x 60</text>
+</package>
+<package name="SCALA_1CM">
+<wire x1="0" y1="0" x2="1" y2="0" width="0.127" layer="101"/>
+<wire x1="1" y1="0.25" x2="1" y2="-0.25" width="0.127" layer="101"/>
+<wire x1="0" y1="0.25" x2="0" y2="-0.25" width="0.127" layer="101"/>
+<text x="0.1" y="0.4" size="0.3048" layer="101" font="vector">1cm</text>
+</package>
+<package name="SCALA_1MT">
+<wire x1="0" y1="0" x2="100" y2="0" width="0.127" layer="101"/>
+<text x="44.6" y="3.9" size="5" layer="101" font="vector">1mt</text>
+<wire x1="100" y1="4" x2="100" y2="-4" width="0.127" layer="101"/>
+<wire x1="0" y1="4" x2="0" y2="-4" width="0.127" layer="101"/>
+</package>
+<package name="DIVANO_200X90">
+<rectangle x1="0" y1="0" x2="200" y2="90" layer="102"/>
+<text x="77" y="59" size="10" layer="103" font="vector">DIVANO</text>
+<text x="84" y="41" size="5" layer="103" font="vector">200 x 90</text>
+</package>
+<package name="PERSONA">
+<rectangle x1="0" y1="0" x2="60" y2="40" layer="104"/>
+<text x="12" y="18" size="6" layer="103" font="vector">PERSONA</text>
+</package>
+<package name="SEDIA_BAO">
+<rectangle x1="0" y1="0" x2="70" y2="70" layer="102"/>
+<text x="21.29289375" y="17.292890625" size="10" layer="103" font="vector" rot="R45">sedia</text>
+</package>
+<package name="MOBILETTO_EX-ANGOLO">
+<rectangle x1="0" y1="0" x2="85" y2="44" layer="102"/>
+<text x="7" y="23" size="5" layer="103" font="vector">MOBILE ex-ANGOLO</text>
+</package>
+<package name="MOBILETTO_SCATOLINE">
+<rectangle x1="0" y1="0" x2="40" y2="18" layer="102"/>
+<text x="5" y="9" size="2" layer="103" font="vector">mobiletto scatoline</text>
+</package>
+<package name="TAVOLO_200X60">
+<rectangle x1="0" y1="0" x2="200" y2="60" layer="102"/>
+<text x="64" y="27" size="10" layer="103" font="vector">200 x 60</text>
+</package>
+<package name="MOBILETTO_&quot;B&quot;">
+<rectangle x1="0" y1="0" x2="100" y2="25" layer="102"/>
+<text x="40" y="8" size="10" layer="103" font="vector">"B"</text>
+</package>
+<package name="MOBILETTO_&quot;A&quot;">
+<rectangle x1="0" y1="0" x2="90" y2="42" layer="102"/>
+<text x="37" y="18" size="10" layer="103" font="vector">"A"</text>
+</package>
+<package name="STORAGE_60X50">
+<rectangle x1="0" y1="0" x2="60" y2="50" layer="102"/>
+<text x="5" y="24" size="8" layer="103" font="vector">STORAGE</text>
+<text x="5" y="10" size="8" layer="103" font="vector">60 x 50</text>
+</package>
+<package name="STORAGE_90X45">
+<rectangle x1="0" y1="0" x2="90" y2="45" layer="102"/>
+<text x="20" y="29" size="8" layer="103" font="vector">STORAGE</text>
+<text x="20" y="12" size="8" layer="103" font="vector">90 x 45</text>
+</package>
+<package name="ARMADIO_CIAO">
+<rectangle x1="0" y1="0" x2="160" y2="64" layer="102"/>
+<rectangle x1="0" y1="-50" x2="66" y2="0" layer="102"/>
+<text x="36" y="25" size="10" layer="103" font="vector">ARMADIO cià</text>
+</package>
+<package name="ARMADIO_TENERE">
+<rectangle x1="0" y1="0" x2="246" y2="66" layer="102"/>
+<text x="65" y="30" size="10" layer="103" font="vector">ARMADIO tenere!</text>
+</package>
+<package name="LETTONE">
+<text x="60" y="180" size="10" layer="103" font="vector">LETTONE</text>
+<polygon width="0" layer="102">
+<vertex x="0" y="0"/>
+<vertex x="0" y="161"/>
+<vertex x="10" y="163"/>
+<vertex x="0" y="165"/>
+<vertex x="0" y="210"/>
+<vertex x="180" y="210"/>
+<vertex x="180" y="165"/>
+<vertex x="170" y="163"/>
+<vertex x="180" y="161"/>
+<vertex x="180" y="0"/>
+</polygon>
+</package>
+<package name="COMODINO">
+<rectangle x1="0" y1="0" x2="52" y2="48" layer="102"/>
+<text x="10" y="1" size="5" layer="103" font="vector">COMODINO</text>
+<rectangle x1="25" y1="-1" x2="27" y2="0" layer="102"/>
+</package>
+<package name="CASSETTONE">
+<rectangle x1="0" y1="0" x2="130" y2="50" layer="102"/>
+<rectangle x1="31" y1="-1" x2="33" y2="0" layer="102"/>
+<rectangle x1="97" y1="-1" x2="99" y2="0" layer="102"/>
+<text x="22" y="9" size="10" layer="103" font="vector">CASSETTONE</text>
+</package>
+<package name="TAVOLOSUZ_BIANCO">
+<rectangle x1="0" y1="0" x2="121" y2="72" layer="102"/>
+<text x="24.13" y="31.75" size="10" layer="103" font="vector">tavolo suz</text>
+</package>
+<package name="COMODINODIVANO">
+<text x="1.34" y="23.95" size="4" layer="103" font="vector">comodino</text>
+<rectangle x1="0" y1="0" x2="30" y2="30" layer="21"/>
+<text x="2.34" y="14.95" size="5.08" layer="103" font="vector">divano</text>
+<text x="5.34" y="6.95" size="4" layer="103" font="vector">30x30</text>
+</package>
+<package name="MOBILE-GIANGI">
+<rectangle x1="0" y1="0" x2="60" y2="28" layer="102"/>
+<text x="4" y="15" size="5.08" layer="103" font="vector">mobile giangi</text>
+<text x="14" y="4" size="5" layer="103" font="vector">60 x 28</text>
+</package>
+<package name="RACK-60X60">
+<rectangle x1="0" y1="0" x2="60" y2="60" layer="102"/>
+<text x="22" y="39" size="5.08" layer="103" font="vector">RACK</text>
+<text x="15" y="20" size="5" layer="103" font="vector">60 x 60</text>
+</package>
+<package name="TAVOLINO-SAMOROST">
+<rectangle x1="0" y1="0" x2="33" y2="27" layer="102"/>
+<text x="4" y="16" size="3.81" layer="103" font="vector">Samorost</text>
+<text x="1" y="4" size="5" layer="103" font="vector">33 x 27</text>
+</package>
+<package name="TAVOLINO_TV">
+<rectangle x1="0" y1="0" x2="60" y2="50" layer="102"/>
+<text x="7" y="21" size="5" layer="103" font="vector">tavolino TV</text>
+</package>
+<package name="TAVOLO_60X110">
+<rectangle x1="0" y1="0" x2="110" y2="60" layer="102"/>
+<text x="22" y="26" size="10" layer="103" font="vector">60 x 110</text>
+</package>
+<package name="PEDRAM">
+<rectangle x1="0" y1="0" x2="110" y2="42" layer="102"/>
+<text x="35" y="28" size="8" layer="103" font="vector">Pedram</text>
+<text x="25" y="10" size="8" layer="103" font="vector">110 x 42</text>
+</package>
+<package name="LETTO-NEIDEN_205X94">
+<rectangle x1="0" y1="0" x2="205" y2="94" layer="102"/>
+<text x="77" y="59" size="10" layer="103" font="vector">LETTO</text>
+<text x="84" y="41" size="5" layer="103" font="vector">205 x 94</text>
+<text x="83.35" y="50.11" size="6.4516" layer="103" font="vector">neiden</text>
+</package>
+</packages>
+<symbols>
+</symbols>
+<devicesets>
+</devicesets>
+</library>
+</drawing>
+</eagle>

@@ -1,6 +1,8 @@
 # E A G L E   libraries    <img src="eaglelogo.jpg" alt="eagle icon" width="50"/>
 ## Cadsoft Eagle Libraries - mostly for audio applications
 
+**TODO: include all directories, exclude "haus" with gitignore and do direct tracking with git**
+
 **bao.lbr** is the main library
  * now all the devices have the attribute "POPULATE" as a boolean value, so for example for a resistor it's "TRUE", for a test pad it's "FALSE". It lets you also create multiple BOMs for mounting variations of the same board.
  * also, every component is unique now, so for example, there is a package variant for each resistor value, so that is easier to track them with inventory software. Each one has a unique "NHPREF" attribute, you can change the name and value of this one as you wish for use in your inventory system. All Legacy up to _bao12.lbr_ DOESN'T use this system.
